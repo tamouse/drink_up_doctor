@@ -1,0 +1,17 @@
+{
+  "name" : "<%= site[:name] %>",
+  "version": "0.0.0",
+  "authors": <%= site[:authors] %>,
+  "homepage": "<%= site[:homepage] %>",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "normalize.scss": "~3.0.2"
+  }
+}
