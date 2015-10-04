@@ -5,7 +5,10 @@ class DrinkUpDoctorTest < Minitest::Test
     refute_nil ::DrinkUpDoctor::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_that_it_builds_a_new_site
+    run_in_tmpdir do |dir|
+      ::DrinkUpDoctor::NewSite.start(%w[percy])
+      assert File.exist? "percy"
+    end
   end
 end

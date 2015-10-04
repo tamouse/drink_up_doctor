@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 
 require "drink_up_doctor"
+DrinkUpDoctor::Base.start

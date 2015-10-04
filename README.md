@@ -1,41 +1,73 @@
 # DrinkUpDoctor
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/drink_up_doctor`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Dependencies
 
-TODO: Delete this and the text above, and describe your gem
+`DrinkUpDoctor` depends on [Gulp], [Bower], [Jekyll], and [Compass]. You'll need to have both [Ruby] and [Node.js] installed and running.
+
+### Installing Global Dependencies
+
+Installations should be simple:
+
+    $ gem install jekyll
+    $ gem install compass
+    $ npm install -g bower
+    $ npm install -g gulp
+
+If you have problems installing any of these, seek help in the associated IRC channels on `irc.freenode.net`.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'drink_up_doctor'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Installing the command should be as simple as
 
     $ gem install drink_up_doctor
 
 ## Usage
 
-TODO: Write usage instructions here
+See the help text:
 
-## Development
+    $ drink_up_doctor new help
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. Run `bundle exec drink_up_doctor` to use the gem in this directory, ignoring other installed copies of this gem.
+Creating a new site:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+    $ drink_up_doctor new NAME [OPTIONS]
+
+The above creates a standard Jekyll site, with a few
+modifications. The new site's README file describes the changes.
+
+After creating a new site, you need to install the components:
+
+    $ npm install
+    $ bower install
+
+After all the installation is done, you can start the gulp server to
+build the various pieces and keep a browser going with site changes:
+
+    $ gulp serve
+
+Following the instructions at the [Jekyll] site should speed you on
+the rest of your way.
+
+## Acknowledgements
+
+Billy Overton's blog post on
+[Setting up Jekyll, Gulp, and Automated Git Deployment](http://billyoverton.com/2015/07/27/Jekyll-Gulp-and-Automated-Deployments.html)
+provided all the inspiration for this tiny bit of automation, which
+mainly for my own nefarious purposes.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/drink_up_doctor. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at
+https://github.com/tamouse/drink_up_doctor. This project is
+intended to be a safe, welcoming space for collaboration, and
+contributors are expected to adhere to the
+[Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The gem is available as open source under the terms of the
+[MIT License](http://opensource.org/licenses/MIT).
 
+[Jekyll]: http://jekyllrb.com/ "Jekyll"
+[Gulp]: http://gulpjs.com/ "Gulp"
+[Bower]: http://bower.io/ "Bower"
+[Compass]: http://compass-style.org/ "Compass"
