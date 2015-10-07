@@ -44,8 +44,9 @@ build the various pieces and keep a browser going with site changes:
 
     $ gulp serve
 
-Following the instructions at the [Jekyll] site should speed you on
-the rest of your way.
+The new site's README file has more details on working with your new
+site with Gulp. Following the instructions at the [Jekyll] site
+should speed you on the rest of your way.
 
 ## Acknowledgements
 
