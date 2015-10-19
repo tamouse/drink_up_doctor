@@ -114,7 +114,7 @@ exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_
     end
 
     def create_readme_for_site
-      template "templates/README.md.erb", "#{name}/README.me"
+      template "templates/README.md.erb", "#{name}/DUD_README.md"
     end
 
     def edit_footer
