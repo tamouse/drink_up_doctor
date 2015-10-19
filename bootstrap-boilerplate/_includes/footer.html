@@ -1,0 +1,18 @@
+<footer class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-footer" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">&copy; {{site.time | date: "%Y"}} {% if site.author %}{{site.author}}{% else %}Site Author{% endif %}</a></li>
+    </div>
+    <div id="navbar-footer" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+	<li><a href="#">Colophon</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

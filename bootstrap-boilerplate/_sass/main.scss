@@ -1,0 +1,20 @@
+// Main.scss -- imports all the other bits of sass/scss to compile to /assets/css/main.css
+// ------------------------------------------------------------------------------------------
+
+@import "my_variables";
+@import "bootstrap";
+
+
+// Local style variations
+// ------------------------------
+
+body {
+    padding: 70px 0;
+}
+
+.post-excerpt {
+    margin: 0 0 10px 0;
+    padding: 0;
+    height: 100px;
+    overflow-y: hidden;
+}

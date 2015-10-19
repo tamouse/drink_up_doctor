@@ -1,60 +1,25 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Page Not Found</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+---
+layout: page
+title: Page Not Found
+---
 
-        * {
-            line-height: 1.2;
-            margin: 0;
-        }
+<p>Sorry, but the page you were trying to view does not exist.</p>
 
-        html {
-            color: #888;
-            display: table;
-            font-family: sans-serif;
-            height: 100%;
-            text-align: center;
-            width: 100%;
-        }
+<a class="btn btn-primary btn-lrg" href="{{site.baseurl}}/">Back Home</a>
+</div>
 
-        body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
-        }
+<div id="extra-crap-for-ie" style="display: none; visibility: hidden">
+<!--
+     IE browser needs a lot of extra crud to actually display the page,
+     so here we go.
 
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit.&nbsp;&nbsp;Donec hendrerit tempor tellus.&nbsp;&nbsp;Donec pretium posuere tellus.&nbsp;&nbsp;Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.&nbsp;&nbsp;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&nbsp;&nbsp;Nulla posuere.&nbsp;&nbsp;Donec vitae dolor.&nbsp;&nbsp;Nullam tristique diam non turpis.&nbsp;&nbsp;Cras placerat accumsan nulla.&nbsp;&nbsp;Nullam rutrum.&nbsp;&nbsp;Nam vestibulum accumsan nisl.<br><br>
+     Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.<br><br>
+     Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.<br><br>
+     Pellentesque dapibus suscipit ligula.&nbsp;&nbsp;Donec posuere augue in quam.&nbsp;&nbsp;Etiam vel tortor sodales tellus ultricies commodo.&nbsp;&nbsp;Suspendisse potenti.&nbsp;&nbsp;Aenean in sem ac leo mollis blandit.&nbsp;&nbsp;Donec neque quam, dignissim in, mollis nec, sagittis eu, wisi.&nbsp;&nbsp;Phasellus lacus.&nbsp;&nbsp;Etiam laoreet quam sed arcu.&nbsp;&nbsp;Phasellus at dui in ligula mollis ultricies.&nbsp;&nbsp;Integer placerat tristique nisl.&nbsp;&nbsp;Praesent augue.&nbsp;&nbsp;Fusce commodo.&nbsp;&nbsp;Vestibulum convallis, lorem a tempus semper, dui dui euismod elit, vitae placerat urna tortor vitae lacus.&nbsp;&nbsp;Nullam libero mauris, consequat quis, varius et, dictum id, arcu.&nbsp;&nbsp;Mauris mollis tincidunt felis.&nbsp;&nbsp;Aliquam feugiat tellus ut neque.&nbsp;&nbsp;Nulla facilisis, risus a rhoncus fermentum, tellus tellus lacinia purus, et dictum nunc justo sit amet elit.<br><br>
+     Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.<br><br>
+     Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.<br><br>
+     Aliquam erat volutpat.&nbsp;&nbsp;Nunc eleifend leo vitae magna.&nbsp;&nbsp;In id erat non orci commodo lobortis.&nbsp;&nbsp;Proin neque massa, cursus ut, gravida ut, lobortis eget, lacus.&nbsp;&nbsp;Sed diam.&nbsp;&nbsp;Praesent fermentum tempor tellus.&nbsp;&nbsp;Nullam tempus.&nbsp;&nbsp;Mauris ac felis vel velit tristique imperdiet.&nbsp;&nbsp;Donec at pede.&nbsp;&nbsp;Etiam vel neque nec dui dignissim bibendum.&nbsp;&nbsp;Vivamus id enim.&nbsp;&nbsp;Phasellus neque orci, porta a, aliquet quis, semper a, massa.&nbsp;&nbsp;Phasellus purus.&nbsp;&nbsp;Pellentesque tristique imperdiet tortor.&nbsp;&nbsp;Nam euismod tellus id erat.<br><br>
 
-        p {
-            margin: 0 auto;
-            width: 280px;
-        }
-
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
-
-    </style>
-</head>
-<body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
-</body>
-</html>
-<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
+-->
+</div>
