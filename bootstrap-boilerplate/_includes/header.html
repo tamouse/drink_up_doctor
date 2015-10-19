@@ -14,6 +14,13 @@
 	{% for page in site.pages %}{% if page.navbar %}
 	<li><a href="{{ page.url | prepend: site.baseurl}}">{{page.title}}</a></li>
 	{% endif %}{% endfor %}
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Categories<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% capture categories %}{% for cat in site.categories %} {{ cat[0] }} {% endfor %}{% endcapture %}{% assign sorted_categories = categories | split:' ' | sort %}{% for cat in sorted_categories %}
+            <li><a href="{{site.baseurl}}/categories/{{cat}}/index.html">{{cat}}</a></li>{% endfor %}
+          </ul>
+        </li><!-- li.dropdown -->
       </ul>
     </div><!--/.navbar-collapse -->
   </div>

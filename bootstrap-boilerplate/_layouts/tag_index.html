@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="page-header">
+    <h1>{{ page.tag }}</h1>
+  </div>
+  {% assign posts = site.tags[page.tag] %}
+  {% for post in posts %}
+  {% include index_item.html %}
+  {% endfor %}
+  </ul>
+</div>

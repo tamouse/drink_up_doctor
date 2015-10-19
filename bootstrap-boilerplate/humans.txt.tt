@@ -3,7 +3,7 @@
 
 # TEAM
 
-  <%= author %>, creator, <%= twitter %>
+  <%= options["author"] %>, creator, <%= options["twitter_username"] %>
 
 # THANKS
 
