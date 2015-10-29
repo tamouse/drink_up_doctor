@@ -1,2 +1,2 @@
 #! /bin/sh
-npm install && bower install
+npm install && bower install && bundle install

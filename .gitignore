@@ -7,3 +7,7 @@
 /pkg/
 /spec/reports/
 /tmp/
+*/.sass-cache/
+*/css/
+*/_site/
+*/_dist/

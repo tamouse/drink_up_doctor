@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello, world!</h1>
+    <p>This is a bootstrap-ized Jekyll site, based upon html5 boilerplate.</p>
+    <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/about/" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+<div class="row">
+  {% for post in site.posts %}
+  {% include index_item.html %}
+  {% endfor %}
+</div>

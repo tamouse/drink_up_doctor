@@ -29,7 +29,7 @@ gulp.task('bower', function() {
 
 gulp.task('jekyll-build', ['css','icons','bower'], function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
     .on('close', done);
 });
 
@@ -76,7 +76,7 @@ gulp.task('serve', ['build'], function() {
 });
 
 gulp.task('jekyll-build-dist', ['css','icons','bower'], function () {
-  return cp.spawn('jekyll', ['build', '--config', '_config.yml,_baseurl.yml', '--destination', config.distDir], {stdio: 'inherit'});
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--config', '_config.yml,_baseurl.yml', '--destination', config.distDir], {stdio: 'inherit'});
 });
 
 gulp.task('dist', ['bower', 'icons', 'css', 'jekyll-build-dist']);

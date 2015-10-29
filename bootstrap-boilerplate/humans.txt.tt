@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <%= options["author"] %>, creator, <%= options["twitter_username"] %>
+
+# THANKS
+
+  <name>
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  jQuery, Bootstrap, FontAwesome
+  Compass, Jekyll
+  Gulp
+  drink_up_doctor
