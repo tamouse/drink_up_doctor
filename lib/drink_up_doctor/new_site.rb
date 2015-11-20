@@ -45,7 +45,6 @@ module DrinkUpDoctor
             "input" => "GFM",
             "hard_wrap" => false
           },
-          "highlighter" => "pygments",
           "defaults" => {
             "author" => options["author"]
           }
@@ -95,7 +94,7 @@ module DrinkUpDoctor
       append_to_file "#{name}/_config.yml", %Q{
 
 # Added by #{app_name}
-exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_components]
+exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_components, Gemfile, Gemfile.lock]
 
 }
 
@@ -114,7 +113,7 @@ exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_
     end
 
     def create_readme_for_site
-      template "templates/README.md.erb", "#{name}/DUD_README.md"
+      template "templates/README.md.erb", "#{name}/README.md"
     end
 
     def edit_footer
@@ -138,6 +137,42 @@ exclude: [README.md, bower.json, package.json, gulpfile.js, node_modules, bower_
     def create_setup
       copy_file "templates/setup.sh", "#{name}/.setup.sh"
       chmod "#{name}/.setup.sh", 0755
+    end
+
+    def print_instructions
+      puts <<-instructions
+
+********************************************************************************
+
+  Completing the Installation
+  ---------------------------
+
+  Change into the new site directory and run the setup script:
+
+
+      $ cd "./#{name}"
+      $ ./.setup.sh
+
+  This will install the npm modules, bower components, and ruby gems
+  needed to work with your new site.
+
+  After the setup is complete, you can start up the gulp server and
+  start blogging:
+
+      $ gulp
+
+  When you are ready to publish, shut down the gulp server with Ctrl-C
+  and run the distribution build:
+
+      $ gulp dist
+
+  The distribution will be in "./#{name}/_dist/" and you can push that
+  to where your site is located. (Github pages, AWS S3, your own server,
+  or whatever you choose to use.)
+
+********************************************************************************
+
+instructions
     end
   end
 end
