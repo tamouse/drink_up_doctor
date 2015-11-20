@@ -29,7 +29,7 @@ gulp.task('bower', function() {
 
 gulp.task('jekyll-build', ['css','icons','bower'], function (done) {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+  return cp.spawn('bundle', ['exec', 'jekyll', 'build', '--incremental'], {stdio: 'inherit'})
     .on('close', done);
 });
 
